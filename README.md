@@ -1,0 +1,1 @@
+This is the beginning of python for our class. So far i have enjoyed it in a sense that it is alot easier than the c programming language.

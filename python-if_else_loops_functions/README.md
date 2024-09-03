@@ -1,0 +1,1 @@
+In this project we will be learning about if and else statements in the python programming language. We will also be learning about loops and simple functions in this project as well.

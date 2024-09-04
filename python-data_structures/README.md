@@ -1,0 +1,1 @@
+In this project we will be learning about data structures and how to implement them into our code.

@@ -1,0 +1,1 @@
+In this project we will be learning how classes are a fundemental concept in op=bject oriented programming taht serves as a template in creating objects.

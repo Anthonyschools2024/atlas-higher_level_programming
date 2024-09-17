@@ -1,0 +1,1 @@
+In this project we will be creating text files and answering questions within these text files.

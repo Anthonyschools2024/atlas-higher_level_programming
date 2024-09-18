@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Module checks if an object is an instance of a class
+Module checks if an object has a specified class
 """
 
 
-def is_kind_of_class(obj, a_class):
+def is_same_class(obj, a_class):
     """
-    Uses isinstance() to check if an object is an instance of a class
+    Compares an object's class to a specified class
 
     Args:
         obj (object):       object to check
@@ -15,6 +15,5 @@ def is_kind_of_class(obj, a_class):
     Returns:
         True (bool):    True if object is an instance of the class
         False (bool):   False otherwise
-
     """
-    return isinstance(obj, a_class)
+    return type(obj) is a_class

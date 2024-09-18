@@ -1,0 +1,30 @@
+
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Anthonyschools2024/atlas-higher_level_programming.git
+   83a8763..6d287fc  main -> main
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-everything_is_object# emacs 29-blog.md
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-everything_is_object# emacs 29-blog.md 
+
+[1]+  Stopped                 emacs 29-blog.md
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-everything_is_object# ls
+0-answer.txt  10-answer.txt  12-answer.txt  14-answer.txt  16-answer.txt  18-answer.txt    2-answer.txt   21-answer.txt  23-answer.txt  25-answer.txt  27-answer.txt  29-blog.md    4-answer.txt  6-answer.txt  8-answer.txt  README.md
+1-answer.txt  11-answer.txt  13-answer.txt  15-answer.txt  17-answer.txt  19-copy_list.py  20-answer.txt  22-answer.txt  24-answer.txt  26-answer.txt  28-answer.txt  3-answer.txt  5-answer.txt  7-answer.txt  9-answer.txt
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-everything_is_object# cd ..
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming# ls
+2-print.py  3-print_number.py  README.md  python-classes  python-data_structures  python-everything_is_object  python-hello_world  python-if_else_loops_functions  python-import_modules  python-more_classes  python-test_driven_development
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming# mkdir python-inheritance
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming# cd python-inheritance/
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# ls
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# emacs README.md 
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# emacs 0-lookup.py
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# chmod +x 0-lookup.py -
+chmod: cannot access '-': No such file or directory
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# chmod +x 0-lookup.py 
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# ls
+0-lookup.py  README.md
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# git add .
+root@46365366e5c94a79bce6031544d38aca-2377118072:/atlas-higher_level_programming/python-inheritance# git commit -m "lookup"
+[main 89b6ea6] lookup
+ 2 files changed, 18 ins

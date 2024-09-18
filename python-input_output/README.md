@@ -1,0 +1,1 @@
+In this project we will be exploring the input and output operations of python!

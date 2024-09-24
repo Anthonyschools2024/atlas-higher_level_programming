@@ -1,23 +1,8 @@
-#!/usr/bin/python3
-
-"""class Rectangle that inherits from Base"""
-
-from models.base import Base
-
 class Rectangle(Base):
     """Rectangle class"""
     
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Initialize Rectangle instance
-        
-        Args:
-            width (int): Width of the rectangle
-            height (int): Height of the rectangle
-            x (int): X-coordinate of the rectangle (default=0)
-            y (int): Y-coordinate of the rectangle (default=0)
-            id (int): Unique identifier for the rectangle (default=None)
-        """
+        # Existing initialization code...
         super().__init__(id)
         
         # Validate width
@@ -87,12 +72,7 @@ class Rectangle(Base):
             print('#' * self.width)
 
     def __str__(self):
-        """Return a string representation of the Rectangle object"""
-        return "[Rectangle] ({}) {}/{}, {}, {}".format(
-            self.id,
-            self.x,
-            self.y,
-            self.width,
-            self.height
-        )
+        """Return string representation of the rectangle"""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
    

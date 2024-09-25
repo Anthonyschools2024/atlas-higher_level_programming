@@ -2,13 +2,16 @@
 """class Base"""
 from json import dumps
 
-
 class Base:
-    """init class"""
+    """Base class for managing id and JSON serialization"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """initialization"""
+        """Initialization of the Base instance
+        
+        Args:
+            id (int): Unique identifier for the instance (default=None)
+        """
         if id is not None:
             self.id = id
         else:
@@ -17,8 +20,15 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """returns the JSON string representation of list_dictionaries"""
-        if list_dictionaries is None:
+        """Return the JSON string representation of list_dictionaries
+        
+        Args:
+            list_dictionaries (list): List of dictionaries to convert to JSON string
+            
+        Returns:
+            str: JSON string representation of list_dictionaries or "[]"
+        """
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
             return dumps(list_dictionaries)

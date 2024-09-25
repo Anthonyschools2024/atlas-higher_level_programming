@@ -30,6 +30,29 @@ class Square(Rectangle):
         self.width = value  # This also sets height due to inheritance
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """Update attributes of the square"""
+        if args:
+            if len(args) > 0:
+                self.id = args[0]
+            if len(args) > 1:
+                self.size = args[1]  # This uses the size setter
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+        else:
+            # Update attributes using kwargs
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "size":
+                    self.size = value  # This uses the size setter
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
+
     def __str__(self):
         """Return string representation of the square"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"

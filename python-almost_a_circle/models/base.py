@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """class Base"""
-from json import dumps
+from json import dumps, loads
 
 class Base:
     """Base class for managing id and JSON serialization"""
@@ -32,6 +32,21 @@ class Base:
             return "[]"
         else:
             return dumps(list_dictionaries)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return the list of the JSON string representation json_string
+        
+        Args:
+            json_string (str): A string representing a list of dictionaries
+            
+        Returns:
+            list: List represented by json_string or an empty list
+        """
+        if json_string is None or json_string == "":
+            return []
+        else:
+            return loads(json_string)
 
     @classmethod
     def save_to_file(cls, list_objs):

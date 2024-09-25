@@ -64,3 +64,27 @@ class Base:
         
         with open(filename, 'w') as file:
             file.write(cls.to_json_string(list_dictionaries))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Creates an instance with all attributes already set
+        
+        Args:
+            **dictionary: Attributes to set for the instance
+            
+        Returns:
+            Instance of the class with attributes set
+        """
+        # Create a dummy instance
+        if cls.__name__ == "Rectangle":
+            dummy = Rectangle(1, 1)  # Assuming dummy values for width and height
+        elif cls.__name__ == "Square":
+            dummy = Square(1)  # Assuming a dummy value for size
+        else:
+            raise ValueError("Unknown class")
+
+        # Use the update method to set the actual values from dictionary
+        dummy.update(**dictionary)
+        return dummy
+
+# Assuming Rectangle and Square classes are defined elsewhere with the required methods

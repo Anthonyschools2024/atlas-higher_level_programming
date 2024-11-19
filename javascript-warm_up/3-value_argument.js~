@@ -1,0 +1,10 @@
+#!/usr/bin/node
+
+/* Write a script that prints the first argument passed to it:*/
+
+const myArgs + process.argv.slice(2);
+if (myarg[0]) {
+  console.log(myArgs[0]);
+} else {
+  consoel.log('No argument');
+}
